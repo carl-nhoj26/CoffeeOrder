@@ -10,9 +10,11 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    private int numberOfCoffees;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.OnCreate( savedInstanceState );
+        super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_main );
     }
 
@@ -81,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void displayQuantity(int numberOfCoffees) {
+        this.numberOfCoffees = numberOfCoffees;
         TextView quantityTextView = (TextView) findViewById(
                 R.id.quantity_text_view );
         quantityTextView.setText( "" + numberOfCoffees );
