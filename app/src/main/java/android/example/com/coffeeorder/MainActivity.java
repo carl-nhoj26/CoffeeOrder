@@ -51,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
         displayMessage( priceMessage );
     }
 
-    private Object findViewById(int chocolate_checkbox) {
+    private View findViewById( int chocolate_checkbox) {
+        return null;
     }
 
 
